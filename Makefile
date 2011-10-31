@@ -3,7 +3,7 @@ all:	build
 build:	xlsoutput
 
 xlsoutput:	xlsoutput.c
-	$(CC) -lX11 -lXrandr -o xlsoutput xlsoutput.c
+	$(CC) -o xlsoutput xlsoutput.c -lX11 -lXrandr
 
 clean:
 	rm -f *~
